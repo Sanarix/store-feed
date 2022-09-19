@@ -16,26 +16,77 @@
 		<div class="row">
 			<header>
 				<h1 class="title">Shoe-Shop</h1>
-				<nav>
-					<a href="#" class="notification">
-						<i class="fa fa-regular fa-bell"></i>
-					</a>
-					<a href="#" class="user-name">
-						<i class="fa fa-regular fa-user"></i><span class="name">User</span>
-					</a>
-					<a href="#" class="cart">
-						<i class="fa fa-regular fa-cart-shopping"></i>
-					</a>
+				<nav class="col-3 d-md-none d-xl-flex">
+					<div class="nav-container	favorite">
+							<i class="fa-solid fa-heart"></i><span>Избранное</span>
+					</div>
+					<div class="nav-container	cart">
+							<i class="fa fa-light fa-cart-shopping"></i><span>Корзина</span>	
+					</div>
+					<div class="nav-container	user">
+						<i class="fa-solid fa-user"></i><span class="name">User</span>
+				</div>
+				</nav>
+				<nav class="nav-burger d-md-block d-xl-none">
+					Бургер
 				</nav>
 			</header>
 		</div>
 		<div class="row">
-			<div class="col-2">
+			<div class="col-2 d-sm-none d-xl-block">
 				<aside class="settings">
-
+					<div class="accordion" id="accordion-acide">
+						<div class="accordion-item" >
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Тип
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+								<div class="accordion-body">
+									<p>Наполнение вкладки</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Размеры
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+								<div class="accordion-body">
+									<p>Наполнение вкладки</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Цвет
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+								<div class="accordion-body">
+									<p>Наполнение вкладки</p>
+								</div>
+							</div>
+						</div><div class="accordion-item">
+							<h2 class="accordion-header" id="headingFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Размеры
+								</button>
+							</h2>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+								<div class="accordion-body">
+									<p>Наполнение вкладки</p>
+								</div>
+							</div>
+					</div>
 				</aside>
 			</div>
-			<div class="col-10">
+			<div class="col d-sm-none d-xl-block"></div>
+			<div class="col-xl-9 col-sm-12">
 				<div class="container products">
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 						<div class="col">
@@ -49,7 +100,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -64,7 +115,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -79,7 +130,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -94,7 +145,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -109,7 +160,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 						</div>
 						</div>
@@ -124,7 +175,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -140,7 +191,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -155,7 +206,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -170,7 +221,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -185,7 +236,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -200,7 +251,7 @@
 											Размер 42. Натуральная кожа.
 										</p>
 										<p class="card-price">2500р</p>
-										<button class="card-button">Купить</button>
+										<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -215,7 +266,7 @@
 										Размер 42. Натуральная кожа.
 									</p>
 									<p class="card-price">2500р</p>
-									<button class="card-button">Купить</button>
+									<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -230,7 +281,7 @@
 										Размер 42. Натуральная кожа.
 									</p>
 									<p class="card-price">2500р</p>
-									<button class="card-button">Купить</button>
+									<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -245,7 +296,7 @@
 										Размер 42. Натуральная кожа.
 									</p>
 									<p class="card-price">2500р</p>
-									<button class="card-button">Купить</button>
+									<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -260,7 +311,7 @@
 										Размер 42. Натуральная кожа.
 									</p>
 									<p class="card-price">2500р</p>
-									<button class="card-button">Купить</button>
+									<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -275,7 +326,7 @@
 										Размер 42. Натуральная кожа.
 									</p>
 									<p class="card-price">2500р</p>
-									<button class="card-button">Купить</button>
+									<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>
@@ -290,7 +341,7 @@
 										Размер 42. Натуральная кожа.
 									</p>
 									<p class="card-price">2500р</p>
-									<button class="card-button">Купить</button>
+									<button class="card-button">Добавить в корзину</button>
 								</div>
 							</div>
 						</div>

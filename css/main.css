@@ -11,23 +11,22 @@ header nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 10%;
 	font-size: 1.5em;
-	margin-right: 10%;
+	margin-right: 5%;
 }
 
-nav a:hover {
+.nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.8em;
+	cursor: pointer;
+	user-select: none;
+}
+
+.nav-container:hover {
 	color: #f5f5f5;
 }
-
-.user-name {
-	text-decoration: none;
-}
-
-.user-name .name {
-	padding: 5px;
-	color: black;
-} 
 
 .settings {
 	position: absolute;
@@ -43,10 +42,18 @@ nav a:hover {
 	height: 100px;	
 }
 
-.card-title {
+.card {
 	text-align: center;
+	cursor: pointer;
 }
 
-.card-price {
-	text-align: center;
+.card-button {
+	background-color: rgb(247, 144, 27);
+	width: 50%;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.hide {
+	display: none !important;
 }
