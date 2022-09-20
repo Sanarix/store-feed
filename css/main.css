@@ -37,6 +37,10 @@ header nav {
 	border-radius: 0 0 10px 0;
 }
 
+.checkbox-list {
+	list-style: none;
+}
+
 .products {
 	margin: 5% 0;
 	height: 100px;	
