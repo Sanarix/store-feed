@@ -31,14 +31,38 @@ header nav {
 .settings {
 	position: absolute;
 	left: 0;
-	background-color: #f5f5f5;
 	width: 20%;
-	height: 100%;
-	border-radius: 0 0 10px 0;
+}
+
+.accordion-button {
+	color: black !important;
+	box-shadow: none !important;
+	background-color: #9966338e !important;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.accordion-body {
+	background-color: #99663348 !important;
 }
 
 .checkbox-list {
 	list-style: none;
+}
+
+.aside-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 10px;
+}
+
+.aside-button {
+	background-color: orange;
+	border-radius: 5px;
+	padding: 10px;
+	width: 50%;
 }
 
 .products {
@@ -52,7 +76,7 @@ header nav {
 }
 
 .card-button {
-	background-color: rgb(247, 144, 27);
+	background-color: orange;
 	width: 50%;
 	padding: 5px;
 	border-radius: 5px;
